@@ -1,0 +1,79 @@
+//Task 1
+
+const {userInput} = require("./UserInput");
+const input = userInput("Please enter number: ")
+
+if(input > 0){
+
+    console.log("The number is positive!")
+}
+else if (input < 0){
+    console.log("The number is negative!")
+}
+else{
+    console.log("The number is zero!")
+}
+
+
+//Task 2 
+
+const input1 = userInput("Please enter your score: ")
+
+if (input1 <=100 && input1 >= 90){
+    console.log("A")
+}
+else if(input1 <=89 && input1 >=80){
+    console.log("B")
+}
+else if(input1 <=79 && input1 >=70){
+    console.log("C")
+}
+else if(input1 <=69 && input1 >=60){
+    console.log("D")
+}
+else if(input1 <60 && input1 >=0){
+    console.log("F")
+}
+else{
+    console.log("Please enter a correct score!")
+}
+
+
+//Task 3
+
+const input2 = userInput("Enter the day of the week: ")
+
+if(input2 === "Saturday" || input2 === "Sunday"){
+    console.log("It's a weekend!")
+}
+else if(input2 === "Monday" || input2 === "Thuesday" || input2 === "Wednesday" || 
+    input2 === "Thursday" || input2 === "Friday"){
+        console.log("It's a weekday!")
+    }
+    else{
+        console.log("Please insert a correct day of the week!")
+    }
+
+
+// Task 4 
+
+let score = 10;
+const input3 = userInput("Is your answer correct? Type yes or no: ")
+
+
+if(input3 === "yes"){
+    ++score;
+    console.log(score)
+}
+else if(input3 === "no"){
+    --score;
+    if(score === 0){
+    console.log("Game Over")
+    }
+    else{
+        console.log(score)
+    }
+}
+else{
+    console.log("Please input correct answer!")
+}
