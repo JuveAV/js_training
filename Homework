@@ -1,0 +1,31 @@
+// Task 1
+
+const {userInput} = require("./UserInput");
+const input = userInput("Please enter a number: ")
+
+if (input % 2 === 1){
+    console.log("The number is odd!")
+}
+else {
+    console.log("The number is even!")
+}
+
+input % 2 === 1 ? console.log("The number is odd!"): console.log("The number is even!");
+
+
+// Task 2
+
+const input1 = userInput("Please enter your score: ")
+
+if(input1 >=50 && input1 <= 100){
+    console.log("Pass")
+}
+else if(input1 >= 0 && input1 < 50){
+    console.log("Fail")
+}
+else{
+    console.log("Please input correct score.")
+}
+
+input1 >= 50 && input1 <=100 ? console.log("Pass") :
+ input1 >=0 && input1 <50? console.log("Fail"):console.log("Please input correct score.")
