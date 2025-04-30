@@ -52,10 +52,10 @@ let netSalaryCalculator = function(grossSalary){
             ssc = grossSalary * 0.05;
         }
         else if(grossSalary >= 500000 && grossSalary < 1125000){
-            ssc = grossSalary * 0.10;
+            ssc = grossSalary * 0.10; // The formula is incorrect. It should be (grossSalary * 0.1) - 25000 for salaries between 501,000 - 1,125,000
         }
         else{
-            ssc = grossSalary - 87500;
+            ssc = grossSalary - 87500; // It should not be grossSalary - 87500 for salaries above 1,125,000 AMD just  ssc = 87500
         }
     
 
